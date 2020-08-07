@@ -6,17 +6,48 @@ public class SinhVien {
     private String Ten;
     private int Tuoi;
     private String Diachi;
-
-    // Phương thức
-    public void setTen(String ten)
+    // Định nghĩa constructer : phương thức khởi tạo
+    public  SinhVien(String Ten ,int tuoi,String DiaChi)
     {
-        if(!ten.isEmpty())
-        {
-            this.Ten = ten;
-        }
+        this.Ten = Ten;
+        this.Tuoi = Tuoi;
+        this.Diachi = DiaChi;
     }
-    public String getTen()
-    {
+   // trỏ chuột vào tên class nhấn alt + insert để gọi getter setter tự động
+    public String getTen() {
         return Ten;
     }
+
+    public void setTen(String ten) {
+        Ten = ten;
+    }
+
+    public int getTuoi() {
+        return Tuoi;
+    }
+
+    public void setTuoi(int tuoi) {
+        Tuoi = tuoi;
+    }
+
+    public String getDiachi() {
+        return Diachi;
+    }
+
+    public void setDiachi(String diachi) {
+        Diachi = diachi;
+    }
+
+    // Phương thức
+    //public void setTen(String ten)
+    //{
+        //if(!ten.isEmpty())
+        //{
+            //this.Ten = ten;
+        //}
+    //}
+    //public String getTen()
+    //{
+       // return Ten;
+    //}
 }

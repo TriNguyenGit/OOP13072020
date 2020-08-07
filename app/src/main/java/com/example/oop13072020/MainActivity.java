@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity {
         // Class : tập thể
 
         // tạo ra một cá thể từ tập thể SinhVien
-        SinhVien sinhViena = new SinhVien();
-        sinhViena.setTen("Nguyen Van A");
+        SinhVien sinhViena = new SinhVien("Nguyen Van A",25,"TP HCM");
         Log.d("BBB",sinhViena.getTen());
     }
 }
