@@ -13,9 +13,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Object : cá thể
         // Class : tập thể
-
-        // tạo ra một cá thể từ tập thể SinhVien
-        SinhVien sinhViena = new SinhVien("Nguyen Van A",25,"TP HCM");
-        Log.d("BBB",sinhViena.getTen());
+        Animal  dog = new Animal();
+        dog.category = "Động vật";
+        dog.height = 50;
+        dog.weight = 15;
+        dog.eat(Food.MEAT);
+        Dog kiki = new Dog();
+        kiki.category = "Chó nhật";
+        kiki.height = 50;
+        kiki.weight = 15;
+        kiki.setSpeed(15);
+        kiki.eat(Food.MEAT);
     }
 }
