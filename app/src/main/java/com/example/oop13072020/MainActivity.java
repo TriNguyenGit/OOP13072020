@@ -13,16 +13,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Object : cá thể
         // Class : tập thể
-        Animal  dog = new Animal();
-        dog.category = "Động vật";
-        dog.height = 50;
-        dog.weight = 15;
-        dog.eat(Food.MEAT);
-        Dog kiki = new Dog();
-        kiki.category = "Chó nhật";
-        kiki.height = 50;
-        kiki.weight = 15;
-        kiki.setSpeed(15);
-        kiki.eat(Food.MEAT);
+        //Animal  dog = new Animal();
+        //dog.setCategory("Động vật");
+        //dog.setHeight(50);
+        //dog.setWeight(15);
+        //dog.eat(Food.MEAT);
+        //Dog kiki = new Dog();
+        //kiki.setCategory("Chó nhật");
+        //kiki.setHeight(50);
+        //kiki.setWeight(15);
+        //kiki.setSpeed(15);
+        //kiki.eat(Food.MEAT);
+
+        //@Override : ghi đè
+            // + ngữ cảnh khi sử dụng kế thừa
+            // + Cách nhận biết :
+                // - có annotation : @Override
+                // - phương thức có lớp cha định nghĩa và lớp con thay đổi
+        //@OverLoad : Nạp chồng
+
+
     }
 }
