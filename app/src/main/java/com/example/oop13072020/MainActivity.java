@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,14 +26,19 @@ public class MainActivity extends AppCompatActivity {
         //kiki.setSpeed(15);
         //kiki.eat(Food.MEAT);
         Dog kiki = new Dog("Chó việt nam",50,3,5,"Nâu");
-        //@Override : ghi đè
-            // + ngữ cảnh khi sử dụng kế thừa
-            // + Cách nhận biết :
-                // - có annotation : @Override
-                // - phương thức có lớp cha định nghĩa và lớp con thay đổi
-        //@OverLoad : Nạp chồng
+        showToast(R.id.bottom);
 
-
-
+    }
+    //@Override : ghi đè
+    // + ngữ cảnh khi sử dụng kế thừa
+    // + Cách nhận biết :
+    // - có annotation : @Override
+    // - phương thức có lớp cha định nghĩa và lớp con thay đổi
+    //@OverLoad : Nạp chồng
+    public void showToast(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+    public void showToast(Integer resId){
+        Toast.makeText(this, resId.toString(), Toast.LENGTH_SHORT).show();
     }
 }
