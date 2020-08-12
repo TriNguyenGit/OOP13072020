@@ -24,13 +24,14 @@ public class MainActivity extends AppCompatActivity {
         //kiki.setWeight(15);
         //kiki.setSpeed(15);
         //kiki.eat(Food.MEAT);
-
+        Dog kiki = new Dog("Chó việt nam",50,3,5,"Nâu");
         //@Override : ghi đè
             // + ngữ cảnh khi sử dụng kế thừa
             // + Cách nhận biết :
                 // - có annotation : @Override
                 // - phương thức có lớp cha định nghĩa và lớp con thay đổi
         //@OverLoad : Nạp chồng
+
 
 
     }

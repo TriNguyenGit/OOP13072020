@@ -4,9 +4,20 @@ import android.util.Log;
 
 public class Dog extends Animal {
     String backgroundcolor;
-    String speed;
+    int speed;
     public  void  setSpeed(Integer speed){
         this.speed = speed +"km/h";
+    }
+
+    // primary constructor
+    public Dog( String category, int height, int weight){
+        super(category,height,weight);
+    }
+    //secondary constructor
+    public Dog( String category, int height, int weight,int speed, String backgroundcolor){
+        super(category,height,weight);
+        this.speed = speed;
+        this.backgroundcolor = backgroundcolor;
     }
 
     @Override
@@ -20,4 +31,6 @@ public class Dog extends Animal {
                 break;
         }
     };
+
+
 }
