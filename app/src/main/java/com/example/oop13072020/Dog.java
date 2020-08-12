@@ -5,8 +5,8 @@ import android.util.Log;
 public class Dog extends Animal {
     String backgroundcolor;
     int speed;
-    public  void  setSpeed(Integer speed){
-        this.speed = speed +"km/h";
+    public  void  setSpeed(int speed){
+        this.speed = speed ;
     }
 
     // primary constructor
